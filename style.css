@@ -25,14 +25,15 @@ body {
 /* New year style */
 h1 {
   font-weight: normal;
-  font-size: 10rem;
-  margin-top: 5 rem;
+  font-size: 7rem;
   color: rgb(250, 227, 21);
   padding: 4rem 6rem 5.5rem;
   border: 0.4rem solid rgb(22, 80, 238);
   border-radius: 2rem;
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;
+  text-align: center;
+  margin: 64px 32px;
 }
 h1::-moz-selection {
   background-color: var(--neon-border-color);
@@ -122,4 +123,24 @@ h1:focus {
 
 .countdown-el span {
   font-size: 1.5rem;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    margin: 8 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1,
+  h2 {
+    font-size: 32px;
+  }
 }
